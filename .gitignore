@@ -3,3 +3,6 @@ node_modules
 out
 dist
 .DS_Store
+
+# Keep the reel soundtrack local. The public repo should not redistribute it.
+public/instagram-reel-audio-192kbps.mp3
