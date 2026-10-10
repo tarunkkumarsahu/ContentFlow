@@ -1,9 +1,5 @@
-import { MyComposition } from "./Composition";
+import {AudioPreviewComposition} from "./AudioPreviewReel";
 
 export const RemotionRoot: React.FC = () => {
-  return (
-    <>
-      <MyComposition />
-    </>
-  );
+  return <AudioPreviewComposition />;
 };
