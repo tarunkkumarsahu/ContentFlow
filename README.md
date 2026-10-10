@@ -1,54 +1,47 @@
-# Remotion video
+# ContentFlow
 
-<p align="center">
-  <a href="https://github.com/remotion-dev/logo">
-    <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="https://github.com/remotion-dev/logo/raw/main/animated-logo-banner-dark.apng">
-      <img alt="Animated Remotion Logo" src="https://github.com/remotion-dev/logo/raw/main/animated-logo-banner-light.gif">
-    </picture>
-  </a>
-</p>
+**Make content creation effortless.**
 
-Welcome to your Remotion project!
+ContentFlow is a code-driven motion graphics playground built with Remotion. The current composition is a 9:16 personal introduction reel for **TARUN**, designed around deterministic beat-synced motion.
 
-## Commands
+## Current reel
 
-**Install Dependencies**
+- 1080 × 1920 vertical
+- 30 FPS
+- ~19.9 seconds
+- Black / off-white / purple editorial visual system
+- Beat-synced kinetic typography
+- Portrait layering and parallax
+- Accent-hit flashes, borders, camera pulses and motion reactions
+- Personal introduction only — no project showcase
 
-```console
-npm i --loglevel=error
+## Local soundtrack
+
+The soundtrack is intentionally **not committed** to this public repository.
+
+Place this file locally at:
+
+```text
+public/instagram-reel-audio-192kbps.mp3
 ```
 
-**Start Preview**
+The filename is already ignored by `.gitignore`.
 
-```console
+## Run
+
+```bash
+npm install
 npm run dev
 ```
 
-**Render video**
+Open the `TarunReel` composition in Remotion Studio.
 
-```console
-npx remotion render
+## Render
+
+```bash
+npx remotion render TarunReel out/tarun-intro-v2.mp4
 ```
 
-**Upgrade Remotion**
+## Motion system
 
-```console
-npx remotion upgrade
-```
-
-## Docs
-
-Get started with Remotion by reading the [fundamentals page](https://www.remotion.dev/docs/the-fundamentals).
-
-## Help
-
-We provide help on our [Discord server](https://discord.gg/6VzzNDwUwV).
-
-## Issues
-
-Found an issue with Remotion? [File an issue here](https://github.com/remotion-dev/remotion/issues/new).
-
-## License
-
-Note that for some entities a company license is needed. [Read the terms here](https://github.com/remotion-dev/remotion/blob/main/LICENSE.md).
+`src/beatMap.ts` contains the soundtrack beat grid and hero accent frames. `src/Composition.tsx` uses those events to drive typography, scale, scene changes, camera impulses, flashes and transition energy.
