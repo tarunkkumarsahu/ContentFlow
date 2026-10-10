@@ -1,5 +1,5 @@
-import {MyComposition} from "./Composition";
+import {V5Composition} from "./CompositionV5";
 
 export const RemotionRoot: React.FC = () => {
-  return <MyComposition />;
+  return <V5Composition />;
 };
